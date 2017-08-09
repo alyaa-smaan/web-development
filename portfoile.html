@@ -1,157 +1,128 @@
-
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-<!-- Beginning of Header which included in all pages -->
-<head>
-<title>alyaa smaan.portofoile</title>
-<link rel="stylesheet" href="css/style3.css">
-<meta charset="utf-8">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
-</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
-
-
-.container{text-align:center;
-color:white;
-}
-
-
-
-article {
-    margin-left: 200px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-    color:white;
-    
-}
-
-
-
-
-
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif  }
+.w3-row-padding img {margin-bottom: 12px }
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background:  grey;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
 </style>
-
-<body style="background-color:#141452; font-family:bold">
-
-<!-- Beginning of Container -->
-
-<!-- Beginning of navbar -->
+<body style="background-color:#330066">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="background:orange">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="https://serving.photos.photobox.com/124967218cae5f6db6582cd82cddc69289a8c2109128dcb84678ea20c5a81fc33b0b57cc.jpg"  style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+  <img src="https://serving.photos.photobox.com/124967218cae5f6db6582cd82cddc69289a8c2109128dcb84678ea20c5a81fc33b0b57cc.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-#ffe6f9">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#myname" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-#ffe6f9">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
- <i class="fa fa-cogs" style="font-size:36px"></i>
-    <p>Projects</p>
+<!--  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-#ffe6f9">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
   </a>
-	
- 
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+-->  
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-#ffe6f9">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:33.33% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:33.33% !important">ABOUT</a>
+    <!--<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>-->
+    <a href="#contact" class="w3-bar-item w3-button" style="width:33.33% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center " id="home" style="color:#ffe6f9">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Alyaa Smaan.</h1>
+    <p>Web Developer.</p>
+    <img src="https://serving.photos.photobox.com/124967218cae5f6db6582cd82cddc69289a8c2109128dcb84678ea20c5a81fc33b0b57cc.jpg" alt="Girl" class="w3-image" width="500" height="200">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">IT's ME !</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Full-Stack Web Developer, enthuthsiastic to develop stunning designs and responsive websites.Working in the program development field. 
+	Skilled in Cascading Style Sheets (CSS), C++, JQuery, Bootstrap, and HTML.
+	pursuing a bachelor of Engineering - BE focused in Electrical, Electronics and Communications Engineering from PSU.</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white" style="border-radius: 10px">
+      <div class="w3-dark-grey" style="height:28px;width:85%;border-radius:10px"><span style="float:right">85%</span></div>
+    </div>
+    <p class="w3-wide">Web Development</p>
+    <div class="w3-white" style="border-radius: 10px">
+      <div class="w3-dark-grey" style="height:28px;width:80%;border-radius:10px"><span style="float:right">80%</span></div>
+    </div><br>
+
   
-  </nav>
-<!-- End of navbar -->
 
 
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
 
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Damietta, Egypt</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: &nbsp; No &nbsp; (-_-) </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: lolasmaan6@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
 
-<!-- Beginning of Header -->
-
-<div class="container">
-
-<header>
- <h1>  Alyaa Smaan</h1>
-</header>
-<p style="font-family:normal; font-size:20px">Little Eng.</p> 
-
-<img src="https://serving.photos.photobox.com/124967218cae5f6db6582cd82cddc69289a8c2109128dcb84678ea20c5a81fc33b0b57cc.jpg" 
-alt="This is a screenshot" />
-</div>
-
-
-<article>
-<div style="margin-top:40px" id="myname" >
-<h2><i class="fa fa-check-circle" style="font-size:24px"></i>
-About me:</h2>
-<hr style="width:200px" class="w3-opacity" >
-<p> Full-Stack Web Developer, enthuthsiastic to develop stunning designs and responsive websites.Working in the program development field. Skilled in Cascading Style Sheets (CSS), C++, JQuery, Bootstrap, and HTML. pursuing a bachelor of Engineering - BE focused in Electrical, Electronics and Communications Engineering from PSU.</p>
-</div>
-
-<div style="margin-top:70px" id="projects">
-<h2><i class="fa fa-check-circle" style="font-size:24px"></i>
-Project</h2>
-<hr style="width:200px" class="w3-opacity" >
-<div style="display:flex">
-<img src="/w3images/wedding.jpg" style="width:100%">
-<img src="/w3images/wedding.jpg" style="width:100%"></div>
-<div style="display:flex">
-<img src="/w3images/wedding.jpg" style="width:100%">
-<img src="/w3images/wedding.jpg" style="width:100%"></div>
-<div style="display:flex">
-<img src="/w3images/wedding.jpg" style="width:100%">
-<img src="/w3images/wedding.jpg" style="width:100%">
-</div>
-
-
-
-<div style="margin-top:70px" id="contact">
-<h2><i class="fa fa-check-circle" style="font-size:24px"></i>
-Contact me:</h2>
-<hr style="width:200px" class="w3-opacity" >
-<p><i class="fa fa-map-marker w3-margin-right" style="font-size:36px"></i> 
-  Egypt , damietta</p>
-  <br>
-<form action="https://formspree.io/mohsmh0@gmail.com">
-<p style="margin-bottom:-20px"><input  style="border-raduis:20px" type="text" placeholder="name" required></p><br>
-
-<p style="margin-bottom:-20px"><input type="text" placeholder="e-mail" required></p><br>
-
-<p><textarea rows="5" type="text" placeholder="Message"></textarea></p>
-
-<button style="font-size:24px;background: #e6e6ff" type="sumbit" class="w3-hover-opacity">send <i class="fa fa-envelope-open-o"></i></button>
-</form>
-</div>
-
-</article>
-
-	
-<!-- End of Header which included in all pages -->
-
-
-
-<footer class="w3-center w3-content w3-padding-64 w3-text-grey w3-xlarge">
-<h4>find me on</h4>
-    <a href="https://www.facebook.com/profile.php?id=100013097046989" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/alyaa_98_" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://plus.google.com/u/0/108477266911096974310" target="_blank"><i class="fa fa-google w3-hover-opacity"></i></a>
-	
-
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-8" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-8" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-8" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-32" type="text" rows="4" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge" style="text-align:center">
+    <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="http://www.(-_-).com" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="http://www.(-_-).com" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="http://www.(-_-).com" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="http://www.(-_-).com" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="http://www.(-_-).com" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="#" target="_blank" class="w3-hover-text-green">Aliaa</a></p>
   <!-- End footer -->
+  </footer>
 
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
-
-
-
-
 </html>
